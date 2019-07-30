@@ -10,5 +10,9 @@
     "require": {
         "vkcom/vk-php-sdk": "^5.100",
         "monolog/monolog": "^1.24"
+    },
+
+    "autoload": {
+        "psr-4": {"SMITExecute\\Library\\": "src/"}
     }
 }
