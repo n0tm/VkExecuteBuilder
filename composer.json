@@ -1,0 +1,14 @@
+{
+    "name": "notm/vk-execute-builder",
+    "description": "Vk Execute Builder with vk php sdk",
+    "authors": [
+        {
+            "name": "n0tm",
+            "email": "n0tm3t@gmail.com"
+        }
+    ],
+    "require": {
+        "vkcom/vk-php-sdk": "^5.100",
+        "monolog/monolog": "^1.24"
+    }
+}
