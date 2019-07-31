@@ -9,7 +9,8 @@
     ],
     "require": {
         "vkcom/vk-php-sdk": "^5.100",
-        "monolog/monolog": "^1.24"
+        "monolog/monolog": "^1.24",
+      "ext-json": "*"
     },
 
     "autoload": {

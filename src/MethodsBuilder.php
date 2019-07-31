@@ -1,12 +1,12 @@
 <?php
 
-namespace SMITExecute\Library\Utils;
+namespace SMITExecute\Library;
 
 class MethodsBuilder
 {
     private $mainMethod;
     private $subMethod;
-    private $params;
+    private $params = [];
 
     /**
      * @return mixed
@@ -68,7 +68,8 @@ class MethodsBuilder
 
     public function build()
     {
-        return sprintf("API.%s.%s(%s)", $this->mainMethod, $this->subMethod, json_encode($this->params, JSON_UNESCAPED_UNICODE));
+        $params = (!empty($this->params)) ?  json_encode($this->params, JSON_UNESCAPED_UNICODE) : "";
+        return sprintf("API.%s.%s(%s)", $this->mainMethod, $this->subMethod, $params);
     }
 
 }
