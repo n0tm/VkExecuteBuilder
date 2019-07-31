@@ -1,6 +1,6 @@
 <?php
 
-namespace SMITExecute\Library\QueriesBuilder;
+namespace SMITExecute\Library\Utils;
 
 class MethodsBuilder
 {
